@@ -1,0 +1,282 @@
+html{
+    height: 100%; 
+    padding-bottom: -60px;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    
+    background-color:#C4DEF1;
+    color:#3186DA;
+    font-family: sans-serif;
+    
+    height: 100%; 
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.header{
+    color:#376695;
+    background-color:#C4DEF1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    
+}
+
+.wrapper {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    flex: 1;   
+    background-color:#F0F9FC;
+}
+
+.logo{
+    padding-top: 0px;
+    margin-left: 700px;
+}
+.title{
+    position: relative;
+    top: 50%;
+    padding-top: 0;
+    margin-top: -40px;/* 再調 */
+    margin-left: 10px;
+}
+
+
+h2{
+    font-size:28px;
+    font-weight: 600;
+    }
+h3{
+    font-size:24px;
+    }
+h4{
+    font-size:20px;
+    }
+
+.row{
+    
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}    
+
+.right{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.icon{
+    padding-right: 30px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+
+}
+
+.side{
+    background-color: #E5F6FF;
+    width: 223px;
+    height: auto;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+}
+
+.acc {
+    background-color: #E5F6FF;
+    color: #376695;
+    cursor: pointer;
+    padding-top: 60px;  
+    padding-bottom: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;/* 角色名字大小 */
+    font-weight: 800;
+    transition: 0.4s;
+    padding-left: 60px;
+  }
+.accordion {
+  background-color: #E5F6FF;
+  color: #376695;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;/* 角色名字大小 */
+  font-weight: 800;
+  transition: 0.4s;
+  padding-left: 60px;
+}
+
+.active, .accordion:hover {
+  background-color: #E5F6FF;
+}
+
+.accordion:after {
+  content: '\25BC';
+  width: 5px;
+  height: 5px;
+  color: #376695;
+  font-weight: bold;
+  float: right;
+  margin-right: 50px;
+  padding-top: 5px;
+}
+
+.active:after {
+  content: "\25B2";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #E5F6FF;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.imgw{
+    width: auto;
+    height: auto;
+    position: relative;
+    background-color:#F0F9FC;
+}
+.white{
+    width:1217px;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+
+.centerword{
+    object-position: center center;
+    position: absolute; 
+    top: 150px;
+    right:150px ;
+    z-index: 10;
+    background:rgba(255, 255, 255, 0);
+    width: 707px;
+    height: 87px;
+    
+}
+
+
+
+.footer{
+    color:#376695;
+    background-color:#C4DEF1;
+    width: 100%;
+    height:60px;
+    text-align:center;
+    margin-bottom: 0px; 
+    
+    position: absolute; /* 绝对定位 */
+    bottom: 0; /* 固定在底部 */
+    left: 0;
+    right: 0;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+
+}
+
+a {
+    text-decoration: none;
+}
+.images{
+    margin : 100px auto;
+    padding : 0px 100px;
+    display : flex;
+    justify-content : space-between;
+}
+.images div{
+    width : 100px
+}
+
+.imgw-setting{
+    width: 800px;
+    height: 550px;
+}
+#setting{
+    float:left;
+    width:349.6px;
+    height:526px;
+    margin-left: 150px;
+    padding : 20px 5px;
+}
+
+.setting-content{
+    position: absolute;
+    top: 80%;
+}
+
+.img-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images-pixel {
+    margin: 50px 10px;
+    display: flex;
+    justify-content: center;
+}
+.image-pixel {
+    margin: 10px 80px;
+    width: 250px;
+    height: 263px;
+}
+.text-row {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+.text {
+    margin: 0 160px;
+    text-align: center;
+}
+
+.primary{
+    background-color:#FFFCE2;
+    color: #3186DA;
+    width: 185px;
+    height: 50px;
+    padding-top:10px;
+    padding-left: 10px;
+    text-align: center;
+}
+.setting-primary{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
